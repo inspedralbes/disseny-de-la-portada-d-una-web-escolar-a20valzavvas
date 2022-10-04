@@ -17,6 +17,7 @@ body {
 section {
     float: left;
     width: 50%;
+    background-color: red;
 }
 
 aside {
@@ -87,3 +88,17 @@ header, footer {
 h1{
     font-size:xx-large
 }
+
+
+/* GRID lAYOUT */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper div{
+    background-color: blue;
+}
+
